@@ -11,6 +11,7 @@ function App() {
   // =========================
   // CÂU 48: FORM THÊM
   // =========================
+  const API_URL = "https://curly-guacamole-q97wr7rrpx6h6xvj-5000.app.github.dev";
   const [studentId, setStudentId] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -33,7 +34,7 @@ function App() {
   // =========================
   const loadStudents = async () => {
     try {
-      const response = await fetch("/api/students");
+      const response = await fetch(`${API_URL}/api/students`);
 
       if (!response.ok) {
         throw new Error("Không thể lấy danh sách sinh viên");
@@ -58,7 +59,7 @@ function App() {
     e.preventDefault();
 
     try {
-      const response = await fetch("/api/students", {
+      const response = await fetch(`${API_URL}/api/students`, {
         method: "POST",
 
         headers: {
@@ -114,7 +115,7 @@ function App() {
     if (!editingId) return;
 
     try {
-      const response = await fetch(`/api/students/${editingId}`, {
+      const response = await fetch(`${API_URL}/api/students/${editingId}`, {
         method: "PUT",
 
         headers: {
@@ -159,7 +160,7 @@ function App() {
     }
 
     try {
-      const response = await fetch(`/api/students/${id}`, {
+      const response = await fetch(`${API_URL}/api/students/${id}`, {
         method: "DELETE",
       });
 
