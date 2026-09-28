@@ -187,7 +187,7 @@ function App() {
 
   return (
     <div>
-      <h1>Thêm sinh viên</h1>
+      <h1>Quản Lý Sinh Viên</h1>
 
       {/* =========================
           CÂU 48 + CÂU 49
