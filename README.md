@@ -1,4 +1,5 @@
 #Cloud Computing Laboratory
-Student Name: Nghi
-Student ID:
-Class:
+Student Name: Dương Thị Tâm Nghi
+Student ID: 237923
+Class: DH23TIN10
+
