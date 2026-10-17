@@ -11,7 +11,7 @@ function App() {
   // =========================
   // CÂU 48: FORM THÊM
   // =========================
-  const API_URL = "https://curly-guacamole-q97wr7rrpx6h6xvj-5000.app.github.dev";
+  const API_URL = "https://mern-backend-237923.onrender.com";
   const [studentId, setStudentId] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
