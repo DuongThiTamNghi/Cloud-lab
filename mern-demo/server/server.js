@@ -105,7 +105,13 @@ app.delete("/api/students/:id", async (req, res) => {
         });
     }
 });
-
+app.get('/health', (req, res) => {
+    res.status(200).json({
+        status: 'UP',
+        timestamp: new Date(),
+        uptime: process.uptime()
+    });
+});
 // Câu 36: Tiến hành kết nối Express Backend với MongoDB Atlas thông qua Mongoose
 mongoose.connect(MONGODB_URI)
     .then(() => {
